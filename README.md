@@ -3,6 +3,7 @@
 Following picture shows the data-path and the controller of the SDRAM bus interface. Prior to operating SDRAM, each ten-bit
 wide bus interface register containing the precharge (tPRE), CAS (tCAS ), burst (tBURST), latency (tLAT), and wait (tWAIT)
 periods must be programmed through a 10-bit program bus.
+<img width="813" alt="sdram bus interface block diagram" src="https://user-images.githubusercontent.com/27938420/43931046-6ba00a2c-9bf1-11e8-8fec-518e16d9cadd.png">
 
 To implement this diagram, we divided this whole diagram into 4 parts: the Addr module handles address logic; the Delay
 module performs the down-counter; Control module is the bus interface; and SDRAM module provides data read and write
